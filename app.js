@@ -14,9 +14,10 @@ app.set('view engine', 'ejs');
 
 //var word = "soliloquy"
 
+var port = process.env.PORT || 8080;
 
-app.listen(3001, function(){
-    console.log('app is running on port 3001')
+app.listen(port, function(){
+    console.log('app is running on port ' + port)
 })
 
 app.get('/', function (req, res) {
